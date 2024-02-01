@@ -1,5 +1,14 @@
 "use strict";
 
+// Choose player names
+window.onload = function () {
+  let player1Name = prompt("Enter Player 1's name:");
+  let player2Name = prompt("Enter Player 2's name:");
+
+  document.querySelector("#name--0").textContent = player1Name;
+  document.querySelector("#name--1").textContent = player2Name;
+};
+
 // Getting references to HTML elements
 const player0El = document.querySelector(".player--0");
 const player1El = document.querySelector(".player--1");
