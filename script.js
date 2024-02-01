@@ -2,21 +2,23 @@
 
 // Choose player names
 window.onload = function () {
-  let player1Name = prompt("Enter Player 1's name:");
-  let player2Name = prompt("Enter Player 2's name:");
+  setTimeout(function () {
+    let player1Name = prompt("Enter Player 1's name:");
+    let player2Name = prompt("Enter Player 2's name:");
 
-  // If player1Name is empty, default to "Player 1"
-  if (!player1Name) {
-    player1Name = "Player 1";
-  }
+    // If player1Name is empty, default to "Player 1"
+    if (!player1Name) {
+      player1Name = "Player 1";
+    }
 
-  // If player2Name is empty, default to "Player 2"
-  if (!player2Name) {
-    player2Name = "Player 2";
-  }
+    // If player2Name is empty, default to "Player 2"
+    if (!player2Name) {
+      player2Name = "Player 2";
+    }
 
-  document.querySelector("#name--0").textContent = player1Name;
-  document.querySelector("#name--1").textContent = player2Name;
+    document.querySelector("#name--0").textContent = player1Name;
+    document.querySelector("#name--1").textContent = player2Name;
+  }, 500); // Delay of 500 milliseconds
 };
 
 // Getting references to HTML elements
